@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+.head {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    width: 100%;
+    background-color: #ABAAAA;
+}
+
+.containerA {
+    display: grid;
+    grid-template-columns: 10fr 10fr;
+    grid-template-rows:15vh 75vh 10vh;
+    grid-template-areas:"header header"
+                        "img1 texto1"
+                        "footer footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: #151313;
+}
+
+.img1 {
+    grid-area: img1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3%;
+}
+
+.texto1 {
+    grid-area: texto1;
+    display: flex;
+    align-items: center;
+    line-height: 140%;
+    padding-top: 3%;
+}
+.mtexto1 {
+    margin-right: 10%;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #151313;
+}
+
+.imgdiv {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 2% 2% 2% 2%;
+    border-radius: 5%;
+    border: none;
+}
+
+button:hover {
+    border-radius: 5%;
+    text-decoration: none;
+    padding: 3% 3% 3% 3%; 
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
